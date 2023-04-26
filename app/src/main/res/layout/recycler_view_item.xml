@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="15dp"
+    android:paddingHorizontal="10dp">
+
+    <LinearLayout
+        android:id="@+id/rv_student_item"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@drawable/recycle_view_item_background"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_account" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rv_student_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student id"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

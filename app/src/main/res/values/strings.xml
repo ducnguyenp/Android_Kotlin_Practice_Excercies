@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Practice All Exercise</string>
+    <string name="notification">Notification</string>
+    <string name="test_notification">Test Notification</string>
+    <string name="firebase_notification">Notification Firebase</string>
+    <string name="test_firebase_notification">Test Notification Firebase</string>
+    <string name="default_notification_channel_id">Default Notification Channel Id</string>
+    <string name="recycler_view">Recycler View</string>
+    <string name="intent">Intent</string>
+    <string name="intent_receive">Intent Receive</string>
+</resources>
