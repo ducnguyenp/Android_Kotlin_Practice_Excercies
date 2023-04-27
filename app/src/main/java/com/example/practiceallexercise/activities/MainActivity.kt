@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding?.notificationFirebaseBtn?.setOnClickListener(this)
         binding?.recyclerViewBtn?.setOnClickListener(this)
         binding?.intentBtn?.setOnClickListener(this)
+        binding?.coroutineBtn?.setOnClickListener(this)
+        binding?.requestCameraBtn?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -37,6 +39,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.intent_btn -> {
                 var intent = Intent(this, IntentActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.coroutine_btn -> {
+                var intent = Intent(this, CoroutineActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.request_camera_btn -> {
+                var intent = Intent(this, RequestCameraActivity::class.java)
                 startActivity(intent)
             }
         }

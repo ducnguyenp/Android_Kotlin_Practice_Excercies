@@ -8,4 +8,7 @@
     <string name="recycler_view">Recycler View</string>
     <string name="intent">Intent</string>
     <string name="intent_receive">Intent Receive</string>
+    <string name="coroutine">Coroutine</string>
+    <string name="request_camera">Request Camera</string>
+    <string name="request_gallery">Request Gallery</string>
 </resources>
