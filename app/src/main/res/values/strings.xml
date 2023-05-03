@@ -11,4 +11,5 @@
     <string name="coroutine">Coroutine</string>
     <string name="request_camera">Request Camera</string>
     <string name="request_gallery">Request Gallery</string>
+    <string name="sql_lite">SQL Lite</string>
 </resources>

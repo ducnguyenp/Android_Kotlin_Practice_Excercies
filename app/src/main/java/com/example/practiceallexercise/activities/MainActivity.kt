@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.practiceallexercise.R
 import com.example.practiceallexercise.activities.intent.IntentActivity
+import com.example.practiceallexercise.activities.sqlLite.SqlLiteActivity
 import com.example.practiceallexercise.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding?.intentBtn?.setOnClickListener(this)
         binding?.coroutineBtn?.setOnClickListener(this)
         binding?.requestCameraBtn?.setOnClickListener(this)
+        binding?.sqlLiteBtn?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -47,6 +49,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.request_camera_btn -> {
                 var intent = Intent(this, RequestCameraActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.sql_lite_btn -> {
+                var intent = Intent(this, SqlLiteActivity::class.java)
                 startActivity(intent)
             }
         }

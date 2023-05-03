@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.sqlLite.SqlLiteActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolBarNavigationTitle">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/navigation_bar_sql_lite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/pastel_red" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Student Name"
+            android:textColor="@color/pastel_brown" />
+
+        <EditText
+            android:id="@+id/et_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_round"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_account"
+            android:drawablePadding="10dp"
+            android:focusableInTouchMode="true"
+            android:hint="Input name"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_add_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_component"
+            android:backgroundTint="@color/pastel_red"
+            android:paddingHorizontal="10dp"
+            android:text="Add Student"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Student list"
+                android:textColor="#B9FFFFFF"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_student_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
