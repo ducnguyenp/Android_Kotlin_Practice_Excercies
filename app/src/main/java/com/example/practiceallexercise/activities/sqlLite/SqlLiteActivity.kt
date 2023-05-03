@@ -1,7 +1,9 @@
 package com.example.practiceallexercise.activities.sqlLite
 
 import android.os.Bundle
-import android.util.Log
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.practiceallexercise.R
@@ -50,9 +52,25 @@ class SqlLiteActivity : BaseActivity() {
         var result = dbHandler.deleteStudent(studentId)
         if (result > 0) {
             setUpRecyclerView()
-            Toast.makeText(this@SqlLiteActivity, "Delete student successfully!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@SqlLiteActivity, "Delete student successfully!", Toast.LENGTH_LONG)
+                .show()
         } else {
-            Toast.makeText(this@SqlLiteActivity, "Delete student successfully!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@SqlLiteActivity, "Delete student successfully!", Toast.LENGTH_LONG)
+                .show()
+        }
+    }
+
+    private fun updateStudent(student: Student) {
+        var dbHandler = DataBaseHandler(this@SqlLiteActivity)
+        var updateName = binding?.rvStudentList?.findViewById<EditText>(R.id.et_update_student_name)?.text.toString()
+        var updateStudent = Student(student.id, updateName)
+        var result = dbHandler.updateStudent(updateStudent)
+        if (result > 0) {
+            setUpRecyclerView()
+            Toast.makeText(this, "Update student success", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, "Update student failed, please try again!", Toast.LENGTH_LONG)
+                .show()
         }
     }
 
@@ -64,9 +82,13 @@ class SqlLiteActivity : BaseActivity() {
         binding?.rvStudentList?.layoutManager = LinearLayoutManager(this)
         binding?.rvStudentList?.setHasFixedSize(true)
         binding?.rvStudentList?.adapter = adapter
-        adapter?.setOnClickLisener(object : StudentAdapter.OnClickListener{
-            override fun onClick(position: Int, student: Student) {
+        adapter?.setOnClickLisener(object : StudentAdapter.OnClickListener {
+            override fun onDelete(position: Int, student: Student) {
                 deleteStudent(student.id)
+            }
+
+            override fun onUpdate(position: Int, student: Student) {
+                updateStudent(student)
             }
         })
     }

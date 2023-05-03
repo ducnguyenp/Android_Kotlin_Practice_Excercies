@@ -86,7 +86,7 @@ class DataBaseHandler(context: Context) :
         contentValues.put(STUDENT_GENDER, "Male")
         contentValues.put(STUDENT_RANK, "Stupid")
 
-        var success = db.update(TABLE_NAME, contentValues, "$KEY_ID=${student.id}", null)
+        var success = db.update(TABLE_NAME, contentValues, KEY_ID + "=" + student.id, null)
         db.close()
         return success
     }
