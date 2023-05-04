@@ -97,6 +97,17 @@
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_red"
             android:text="@string/sql_lite" />
+
+        <Button
+            android:id="@+id/live_data_btn"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/round_component"
+            android:backgroundTint="@color/pastel_deep_purple"
+            android:text="@string/live_data" />
     </LinearLayout>
 
 </LinearLayout>
