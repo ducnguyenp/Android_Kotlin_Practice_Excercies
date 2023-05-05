@@ -24,90 +24,101 @@
         <Button
             android:id="@+id/notification_btn"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_green"
-            android:text="Notification" />
+            android:text="Notification"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/notification_firebase_btn"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_orange"
-            android:text="@string/firebase_notification" />
+            android:text="@string/firebase_notification"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/recycler_view_btn"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_yellow"
-            android:text="@string/recycler_view" />
+            android:text="@string/recycler_view"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/intent_btn"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_pink"
-            android:text="@string/intent" />
+            android:text="@string/intent"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/coroutine_btn"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_brown"
-            android:text="@string/coroutine" />
+            android:text="@string/coroutine"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/request_camera_btn"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_navi"
-            android:text="@string/request_camera" />
+            android:text="@string/request_camera"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/sql_lite_btn"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_red"
-            android:text="@string/sql_lite" />
+            android:text="@string/sql_lite"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/live_data_btn"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_component"
             android:backgroundTint="@color/pastel_deep_purple"
-            android:text="@string/live_data" />
+            android:text="@string/live_data"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/retrofit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_component"
+            android:backgroundTint="@color/pastel_skin"
+            android:text="@string/retrofit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

@@ -9,6 +9,8 @@ object Constants {
     const val CAMERA_PERMISSION_CODE: Int = 3
     const val CAMERA_REQUEST_CODE: Int = 3
     const val INTENT_RECEIVER_SEND_MESSAGE_BACK = 0
+    const val BASE_URL = "https://jsonplaceholder.typicode.com/"
+
     val StudentList: ArrayList<Student> =
         arrayListOf(
             Student(1, "Duc"),

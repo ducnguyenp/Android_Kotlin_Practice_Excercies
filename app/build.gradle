@@ -70,4 +70,8 @@ dependencies {
 
     //Loading view
     implementation 'io.github.elye:loaderviewlibrary:3.0.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
 }
