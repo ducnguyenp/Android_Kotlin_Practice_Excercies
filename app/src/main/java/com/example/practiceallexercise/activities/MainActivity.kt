@@ -9,6 +9,7 @@ import com.example.practiceallexercise.activities.intent.IntentActivity
 import com.example.practiceallexercise.activities.liveData.LiveDataActivity
 import com.example.practiceallexercise.activities.retrofit.RetrofitActivity
 import com.example.practiceallexercise.activities.sqlLite.SqlLiteActivity
+import com.example.practiceallexercise.activities.viewModel.ViewModelActivity
 import com.example.practiceallexercise.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding?.sqlLiteBtn?.setOnClickListener(this)
         binding?.liveDataBtn?.setOnClickListener(this)
         binding?.retrofitBtn?.setOnClickListener(this)
+        binding?.viewModelBtn?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -65,6 +67,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.retrofit_btn -> {
                 var intent = Intent(this, RetrofitActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.view_model_btn -> {
+                var intent = Intent(this, ViewModelActivity::class.java)
                 startActivity(intent)
             }
         }

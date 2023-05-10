@@ -14,4 +14,7 @@
     <string name="sql_lite">SQL Lite</string>
     <string name="live_data">Live Data</string>
     <string name="retrofit">Retrofit</string>
+    <string name="view_model">View Model</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

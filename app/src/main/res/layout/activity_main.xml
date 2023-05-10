@@ -119,6 +119,17 @@
             android:text="@string/retrofit"
             android:textColor="@color/white"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/view_model_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_component"
+            android:backgroundTint="@color/pastel_dark_blue"
+            android:text="@string/view_model"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>
